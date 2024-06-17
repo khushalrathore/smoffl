@@ -1,0 +1,80 @@
+@media only screen and (max-width:50em) {
+  .blogsDivHeading {
+    span {
+      font-size: 1.5rem !important;
+    }
+
+    p {
+      font-size: 1.25rem !important;
+
+    }
+  }
+
+  /* hh */
+}
+
+.blogsDiv {
+  padding: 1rem 2rem;
+
+  .blogsDivHeading {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: baseline;
+
+      span {
+        font-size: 2.5rem;
+        font-weight: 500;
+
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.72);
+        opacity: 0.6;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: lowercase;
+
+      }
+    }
+  }
+
+  .blogsDivContent {
+
+    margin-block: 1rem;
+    border-radius: 20px;
+    background: gainsboro;
+    display: flex;
+    justify-content: space-around;
+    width: 96dvw;
+    height: 40dvh;
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: '';
+      inset: 0;
+      border-radius: 20px;
+      background: url('https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/01/every-new-a24-movie-releasing-in-2024.jpg')no-repeat center center;
+      filter: blur(35px);
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      inset: 0;
+      border-radius: 20px;
+      background: url(https://img.freepik.com/free-photo/cardboard-texture_1194-5419.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718409600&semt=ais_user);
+      opacity: 0.8;
+      z-index: -1;
+    }
+  }
+}
