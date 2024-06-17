@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Blogs.module.css';
 
 function Blogs({ userName, blogDate, blogTitle, blogDesc, userPfp, blogCover }) {
+  // const blurBg = document.querySelector('.blogsDivContent::after');
+  // blurBg.style.background = `url(${blogCover})no-repeat center center`;
   const days = new Date().getDate() - blogDate;
-  const Views = 0;
   const shares = 0;
+  const [Views, setViews] = useState(0);
+  const handleViews = () => {
+    setViews(v => v + 1);
+  }
 
-  // Array of tags
   const tags = [
-    '#VideoEditing', '#EditingTips', '#CreativeProcess', '#FilmMaking', '#Storytelling',
-    '#ContentCreation', '#EditingWorkflow', '#VideoProduction', '#PostProduction',
-    '#CreativeEditing', '#FilmEditing', '#EditingLife', '#VideoReview', '#PerfectingTheCut',
+    '#VideoEditing', '#EditingTips', '#FilmMaking', '#VideoProduction', '#PostProduction',
+    '#CreativeEditing', '#VideoReview', '#PerfectingTheCut',
     '#EditingEssentials'
   ];
 
@@ -21,7 +24,6 @@ function Blogs({ userName, blogDate, blogTitle, blogDesc, userPfp, blogCover }) 
           <span>Blogs</span>
           <p>Unveiling the Art of Video Editing and Creative Expression</p>
         </div>
-        <button>View All Blogs</button>
       </div>
       <div className={styles.blogsDivContent}>
         <div className={styles.blogsDivContent1}>
@@ -48,10 +50,12 @@ function Blogs({ userName, blogDate, blogTitle, blogDesc, userPfp, blogCover }) 
                 ))}
               </div>
             </div>
-            <div>
-              <span>{Views} Views&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<span>{shares} Shares</span></span>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+              <div>
+                <span>{Views} Views&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<span>{shares} Shares</span></span>
+              </div>
+              <div onClick={handleViews} className={styles.readMore}>Read More</div>
             </div>
-            <div className={styles.readMore}>Read More</div>
           </div>
         </div>
         <div className={styles.hasButtons}>

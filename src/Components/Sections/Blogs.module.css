@@ -1,6 +1,4 @@
 @media only screen and (max-width:50em) {
-
-
   .blogsDivHeading {
     span {
       font-size: 1.5rem !important;
@@ -10,88 +8,26 @@
       font-size: 1.25rem !important;
 
     }
-
-
-  }
-
-  .tags {
-    display: none !important;
-  }
-
-  .blogCover {
-    width: 100%;
-    max-height: 300px;
-    min-height: 200px !important;
   }
 
   /* hh */
 }
 
-.blogsDiv {
-  padding: 1rem 2rem;
-
-  .blogsDivHeading {
-    display: flex;
-    justify-content: space-between;
-
-    div {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      align-items: baseline;
-
-      span {
-        font-size: 2.5rem;
-        font-weight: 500;
-
-      }
-
-      p {
-        color: rgba(0, 0, 0, 0.72);
-        opacity: 0.6;
-        font-size: 1.5rem;
-        font-weight: 500;
-        text-transform: lowercase;
-
-      }
-    }
-  }
+@media only screen and (max-width:30em) {
 
   .blogsDivContent {
-
-    margin-block: 1rem;
-    border-radius: 20px;
-    background: gainsboro;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding-block: 2rem;
-    align-items: center;
-
-    position: relative;
-    opacity: 1;
-    z-index: 1;
+    padding-top: 0rem !important;
 
     .blogsDivContent1 {
-      padding: 1rem 3rem;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 100%;
-      align-items: end;
+      margin-top: 0;
+      padding-inline: 0.75rem !important;
+      gap: 1rem !important;
 
       .blogsData {
-        flex: 1;
+        flex: unset !important;
 
         .blogsPublishInfo {
-          background: linear-gradient(120deg, rgba(255, 255, 255, 0.35), rgba(220, 220, 220, 0.35));
-          backdrop-filter: blur(50px);
-          display: inline-block;
-          padding: 0.5rem 0.75rem;
           font-size: 12px;
-          border-radius: 1rem;
 
           p {
             span {
@@ -101,51 +37,33 @@
         }
 
         .blogsUserInfo {
-          margin-top: 1.25rem;
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-
-          .blogsUserPfp {
-            width: 40px;
-            height: 40px;
-            background-size: cover !important;
-            border-radius: 50%;
-          }
+          margin-top: 0.75rem !important;
         }
 
         .blogTitle {
-          font-size: 2rem;
-          font-weight: 600;
-          margin-block: 0.75rem;
+          font-size: 1.5rem !important;
+          margin-block: 0.5rem !important;
+
+          &:hover {
+            text-decoration: none !important;
+          }
 
         }
 
         .blogDesc {
           color: rgba(0, 0, 0, 0.72);
+          font-size: 0.8rem !important;
           max-width: 50ch;
         }
       }
 
       .blogCover {
-        flex: 1;
-        width: 100%;
-        height: 300px;
-        aspect-ratio: 1/1;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-        background-position: center center !important;
-        padding: 1rem;
-        border-radius: 12px;
+        display: none !important;
       }
 
       .blogStats {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: baseline;
-        align-items: center;
-        gap: 2rem;
+        flex: unset !important;
+        width: 100% !important;
         min-height: 100% !important;
 
         .readMore {
@@ -169,16 +87,7 @@
       }
     }
 
-    &::after {
-      position: absolute;
-      content: '';
-      inset: 0;
-      border-radius: 20px;
-      background: url('https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/01/every-new-a24-movie-releasing-in-2024.jpg')no-repeat center center;
-      filter: blur(35px);
-      opacity: 0.45;
-      z-index: -1;
-    }
+
 
     &::before {
       position: absolute;
@@ -239,7 +148,247 @@
 
       }
     }
+
   }
+
+  .tags {
+    display: none !important;
+  }
+
+  .blogCover {
+    width: 100%;
+    max-height: 300px;
+    min-height: 200px !important;
+  }
+
+}
+
+
+.blogsDiv {
+  padding: 1rem 2rem;
+
+  .blogsDivHeading {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: baseline;
+
+      span {
+        font-size: 2.5rem;
+        font-weight: 500;
+
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.72);
+        opacity: 0.6;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: lowercase;
+
+      }
+    }
+  }
+
+  .blogsDivContent::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    border-radius: 20px;
+    background: url('https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/01/every-new-a24-movie-releasing-in-2024.jpg')no-repeat center center;
+    filter: blur(55px);
+
+    opacity: 0.35;
+    z-index: -1;
+  }
+
+  .blogsDivContent {
+
+    margin-block: 1rem;
+    border-radius: 20px;
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: 2rem;
+
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+
+    .blogsDivContent1 {
+      padding: 1rem 3rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      align-items: stretch;
+
+      .blogsData {
+        flex: 1;
+
+        .blogsPublishInfo {
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.35), rgba(220, 220, 220, 0.35));
+          backdrop-filter: blur(50px);
+          display: inline-block;
+          padding: 0.5rem 0.75rem;
+          font-size: 12px;
+          border-radius: 1rem;
+
+          p {
+            span {
+              color: rgb(74, 74, 74);
+            }
+          }
+        }
+
+        .blogsUserInfo {
+          margin-top: 1.25rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          .blogsUserPfp {
+            width: 40px;
+            height: 40px;
+            background-size: cover !important;
+            border-radius: 50%;
+          }
+        }
+
+        .blogTitle {
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-block: 0.75rem;
+          cursor: default;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+        }
+
+        .blogDesc {
+          color: rgba(0, 0, 0, 0.72);
+          max-width: 50ch;
+        }
+      }
+
+      .blogCover {
+        flex: 1;
+        width: 100%;
+        min-height: 250px;
+        max-height: 300px;
+        aspect-ratio: 1/1;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .blogStats {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2rem;
+        min-height: 100% !important;
+
+        .readMore {
+          padding: 0.75rem 2rem;
+          border-radius: 8px;
+          background-color: black;
+          color: white;
+          width: 100%;
+          border: none;
+          transition: all 150ms;
+          cursor: pointer;
+          font-size: 1rem;
+          text-align: center;
+
+          &:hover {
+            background-color: rgba(22, 22, 22, 0.959);
+
+          }
+
+        }
+      }
+    }
+
+
+
+    &::before {
+      position: absolute;
+      content: '';
+      inset: 0;
+      border-radius: 20px;
+      background: url(https://img.freepik.com/free-photo/cardboard-texture_1194-5419.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718409600&semt=ais_user);
+      background: transparent;
+      opacity: 0.8;
+      z-index: -2;
+    }
+
+    .hasButtons {
+      display: flex;
+      gap: 1rem;
+
+      div {
+        border: none;
+        color: white;
+        background: grey;
+        font-size: 1rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        flex-direction: row;
+        cursor: pointer;
+        transition: all 150ms;
+
+        &:first-child {
+          opacity: 0.7;
+        }
+
+        &:active {
+          scale: 1.05;
+        }
+
+
+        .arrow1,
+        .arrow2 {
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid black;
+          border-left: 2px solid black;
+          rotate: 45deg;
+        }
+
+        .arrow2 {
+          &:first-child {
+            rotate: -135deg;
+          }
+
+
+        }
+
+
+      }
+    }
+
+  }
+
+
 }
 
 .tags {
