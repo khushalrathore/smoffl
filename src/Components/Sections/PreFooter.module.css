@@ -17,6 +17,9 @@
   .preFooterDiv {
     align-items: start !important;
     padding-bottom: 0 !important;
+    padding-inline: 1rem !important;
+    margin-bottom: -2rem !important;
+
   }
 }
 
@@ -29,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  padding-inline: 2rem;
 
 
   .preFooterDivHeading {
