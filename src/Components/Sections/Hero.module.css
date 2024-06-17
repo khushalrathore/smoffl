@@ -1,11 +1,20 @@
 .heroDiv {
-  background: white;
   padding: 1rem 2rem;
-  margin-block: 6rem;
+  padding-block: 6rem;
   display: flex;
   flex-wrap: wrap-reverse !important;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 0;
+
+
+  .heroDivBg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
 
   .heroDiv1 {
     flex: 1;
@@ -51,19 +60,15 @@
     }
 
     .mini {
-      background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGR2YW5nb2doLXNlbGYtcG9ydHJhaXQtbTAxLWpvYjY2MV8yLWwxMDBvNmVmLmpwZw.jpg)no-repeat center center;
-      background-size: cover;
+      background-size: cover !important;
       height: 80px;
       width: 80px;
       border-radius: 5px;
-      /* filter: saturate(0) invert(1) hue-rotate(180deg); */
-      /* border: 2px solid white !important; */
     }
   }
 
   .heroDiv2 {
-    background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGR2YW5nb2doLXNlbGYtcG9ydHJhaXQtbTAxLWpvYjY2MV8yLWwxMDBvNmVmLmpwZw.jpg)no-repeat center center;
-    background-size: cover;
+    background-size: cover !important;
     height: 425px;
     border-radius: 25px;
     flex: 0.7;

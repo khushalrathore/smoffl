@@ -1,5 +1,23 @@
-import styles from './Header.module.css'
+import { useEffect } from 'react';
+import styles from './Header.module.css';
+
 function Header() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector(`.${styles.headerMain}`);
+      if (window.scrollY > 0) {
+        header.classList.add(styles.scrolled);
+      } else {
+        header.classList.remove(styles.scrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header className={styles.headerMain}>
       <div className={styles.logoDivWrapper}>
@@ -16,8 +34,8 @@ function Header() {
           <div>=</div>
         </ul>
       </nav>
-
     </header>
-  )
+  );
 }
+
 export default Header;

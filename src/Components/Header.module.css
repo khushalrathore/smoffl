@@ -8,16 +8,21 @@
   }
 }
 
+.headerMain.scrolled {
+  background: rgba(255, 255, 255, 0.4574);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
 .headerMain {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: rgba(255, 255, 255, 0.574);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  position: sticky;
+  background: none;
+
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
