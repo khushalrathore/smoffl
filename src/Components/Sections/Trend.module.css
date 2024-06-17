@@ -1,0 +1,58 @@
+@media only screen and (max-width:50em) {
+  .trendTitleDiv {
+    font-size: 1.5rem !important;
+
+    button {
+      font-size: 1.25rem !important;
+
+      &::after {
+        top: 0.5rem !important;
+        right: -1.25rem !important;
+      }
+
+    }
+  }
+
+  /* hh */
+}
+
+.trendTitleDiv {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: all 450ms;
+
+  button {
+    font-size: 2.5rem;
+    font-weight: 500;
+    border: none;
+    background: none;
+    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.72);
+    position: relative;
+    cursor: pointer;
+    margin-left: 0.25em;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-left: 2px solid black;
+      border-top: 2px solid black;
+      transform: rotate(225deg);
+      top: 1.25rem;
+      right: -1.5rem;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .trendTitle {
+    padding: 1rem 2rem;
+    font-weight: 500;
+  }
+}

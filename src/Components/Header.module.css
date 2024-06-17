@@ -1,0 +1,79 @@
+@media only screen and (max-width:50em) {
+  .bigNav {
+    display: none;
+  }
+
+  .headerMain {
+    padding: 1rem !important;
+  }
+}
+
+.headerMain {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.574);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+
+  .logoDivWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+
+    .logoDiv {
+      background: url(src/assets/moon.png)no-repeat center center;
+      background-size: 150%;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+    }
+
+    span {
+      background: none;
+      font-weight: 300;
+      font-size: 1.25rem;
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      li {
+        padding: 0.5rem 1rem;
+        border-radius: 100px;
+        background: none;
+        transition: all 150ms;
+
+        &:hover {
+          background-color: rgba(245, 245, 245, 0.447);
+        }
+
+        &:nth-child(5) {
+          background-color: black;
+          color: white;
+          transition: all 150ms;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.659);
+
+          }
+        }
+      }
+    }
+  }
+}

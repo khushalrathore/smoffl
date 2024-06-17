@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  box-sizing: border-box;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+
+
+}
+
+/* 
+@media (prefers-color-scheme: dark) {
+  * {
+    background: pink;
+  }
+}
+ */
