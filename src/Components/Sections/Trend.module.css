@@ -1,4 +1,8 @@
 @media only screen and (max-width:50em) {
+  .parentTrendDiv {
+    overflow-x: hidden;
+  }
+
   .trendTitleDiv {
     font-size: 1.5rem !important;
 

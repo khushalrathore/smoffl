@@ -9,7 +9,7 @@ function Trend() {
 
   }
   return (
-    <div>
+    <div className={styles.parentTrendDiv}>
       <div className={styles.trendTitleDiv}>
         <p className={styles.trendTitle}>Trending<button>{op1}</button></p>
       </div>
