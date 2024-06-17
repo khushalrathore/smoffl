@@ -194,20 +194,18 @@
     }
   }
 
-  .blogsDivContent::after {
+  .blogsDivContentbg {
     position: absolute;
-    content: '';
     inset: 0;
     border-radius: 20px;
-    background: url('https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/01/every-new-a24-movie-releasing-in-2024.jpg')no-repeat center center;
-    filter: blur(55px);
-
     opacity: 0.35;
+    background: url('https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/01/every-new-a24-movie-releasing-in-2024.jpg')no-repeat center center;
+    filter: blur(50px);
     z-index: -1;
   }
 
   .blogsDivContent {
-
+    position: relative;
     margin-block: 1rem;
     border-radius: 20px;
     background: gainsboro;

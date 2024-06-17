@@ -1,0 +1,93 @@
+@media only screen and (max-width:30em) {
+  .recentItemTitle {
+    font-size: 1rem !important;
+  }
+
+  .recentItemStats {
+    font-size: 0.8rem !important;
+  }
+
+  .recentItem {
+    align-items: stretch !important;
+  }
+
+  .recentItemWrapper {
+
+    .recentItem {
+      min-width: 100% !important;
+    }
+  }
+
+
+}
+
+.recentItemWrapper {
+  padding: 0rem 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1rem;
+
+  .hasID {
+    min-width: 1ch;
+  }
+
+  .recentItem {
+    background: rgb(255, 255, 255);
+    font-size: 1rem;
+    border-radius: 10px;
+    max-height: 285px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 150ms;
+
+    &:hover {
+      background-color: rgb(228, 228, 228);
+
+    }
+
+    .recentItemText {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      min-height: 100%;
+      position: relative;
+      flex: 1;
+
+      .recentItemStats {
+        a {
+          transition: all 150ms;
+          padding: 0.125rem 0.5rem;
+          border-radius: 100px;
+
+
+          &:hover {
+            color: black !important;
+            background: radial-gradient(rgba(0, 0, 0, 0.233), rgba(78, 78, 78, 0.233));
+            padding: 0.125rem 0.5rem;
+          }
+        }
+      }
+    }
+
+    .recentItemImage {
+      width: 100%;
+      height: 150px;
+      background: url(https://i.pinimg.com/originals/5b/62/48/5b62482ee9032dbfeb447cf811bd644c.gif)no-repeat center center;
+      border-radius: 5px;
+      background-size: cover;
+    }
+
+    .recentItemTitle {
+      font-size: 1.25rem;
+    }
+  }
+}

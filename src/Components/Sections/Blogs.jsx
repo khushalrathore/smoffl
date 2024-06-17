@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import styles from './Blogs.module.css';
 
-function Blogs({ userName, blogDate, blogTitle, blogDesc, userPfp, blogCover }) {
-  // const blurBg = document.querySelector('.blogsDivContent::after');
-  // blurBg.style.background = `url(${blogCover})no-repeat center center`;
+function Blogs({ blogDate }) {
+  const blogInfo = {
+    first: {
+      pfp: 'https://yt3.googleusercontent.com/3gSdkQZN9zbBJQBAuq8zJ1AST5YVTveIFzjkYUUmEkvmKlumAjgI8kWzO58Uiwn0C9Ph_e3cXKE=s176-c-k-c0x00ffffff-no-rj',
+      name: 'Himanshu Kumawat',
+      title: 'Learning the same sh*t twice',
+      desc: 'Revisiting footage can be tedious but essential in video editing. Each review uncovers new details, ensuring refined cuts and enhanced storytelling, ultimately perfecting the final production.',
+      cover: 'https://i.redd.it/52nhgb5quao51.jpg',
+    },
+  }
   const days = new Date().getDate() - blogDate;
   const shares = 0;
   const [Views, setViews] = useState(0);
@@ -26,19 +33,20 @@ function Blogs({ userName, blogDate, blogTitle, blogDesc, userPfp, blogCover }) 
         </div>
       </div>
       <div className={styles.blogsDivContent}>
+        <div className={styles.blogsDivContentbg} style={{ background: `url(${blogInfo.first.cover}) no-repeat center center`, backgroundSize: '100%' }}></div>
         <div className={styles.blogsDivContent1}>
           <div className={styles.blogsData}>
             <div className={styles.blogsPublishInfo}>
               <p> Published&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<span>{days}d ago</span> </p>
             </div>
             <div className={styles.blogsUserInfo}>
-              <div className={styles.blogsUserPfp} style={{ background: `url(${userPfp}) no-repeat center center` }}></div>
-              <p>{userName}</p>
+              <div className={styles.blogsUserPfp} style={{ background: `url(${blogInfo.first.pfp}) no-repeat center center` }}></div>
+              <p>{blogInfo.first.name}</p>
             </div>
-            <p className={styles.blogTitle}>{blogTitle}</p>
-            <p className={styles.blogDesc}>{blogDesc}..</p>
+            <p className={styles.blogTitle}>{blogInfo.first.title}</p>
+            <p className={styles.blogDesc}>{blogInfo.first.desc}..</p>
           </div>
-          <div className={styles.blogCover} style={{ background: `url(${blogCover}) no-repeat center center` }}></div>
+          <div className={styles.blogCover} style={{ background: `url(${blogInfo.first.cover}) no-repeat center center` }}></div>
           <div className={styles.blogStats}>
             <div className={styles.tags}>
               <span>Tags</span>
