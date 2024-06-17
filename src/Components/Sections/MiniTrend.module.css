@@ -1,0 +1,85 @@
+@media only screen and (max-width:30em) {
+  .miniTrendTitle {
+    font-size: 1rem !important;
+  }
+
+  .miniTrendStats {
+    font-size: 0.8rem !important;
+  }
+
+  .miniTrend {
+    align-items: stretch !important;
+  }
+}
+
+.miniTrendWrapper {
+  padding: 0rem 0rem;
+  margin: 1rem 2rem;
+  margin-block: 1.25rem 0;
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1rem;
+
+  .hasID {
+    min-width: 1ch;
+  }
+
+  .miniTrend {
+    background: rgb(243, 243, 243);
+    font-size: 1rem;
+    flex: 1;
+    border-radius: 10px;
+
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 150ms;
+
+    &:hover {
+      background-color: rgb(228, 228, 228);
+
+    }
+
+    .miniTrendText {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      min-height: 100%;
+      flex: 1;
+
+      .miniTrendStats {
+        a {
+          transition: all 150ms;
+          padding: 0.125rem 0.5rem;
+          border-radius: 100px;
+
+
+          &:hover {
+            color: black !important;
+            background: radial-gradient(rgba(0, 0, 0, 0.233), rgba(78, 78, 78, 0.233));
+            padding: 0.125rem 0.5rem;
+          }
+        }
+      }
+    }
+
+    .miniTrendImage {
+      width: 60px;
+      height: 60px;
+      background: url(https://i.pinimg.com/originals/5b/62/48/5b62482ee9032dbfeb447cf811bd644c.gif)no-repeat center center;
+      border-radius: 5px;
+      background-size: cover;
+    }
+
+    .miniTrendTitle {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -17,6 +17,8 @@
 }
 
 .trendTitleDiv {
+  padding: 1rem 2rem;
+
   font-size: 2.5rem;
   display: flex;
   justify-content: start;
@@ -52,7 +54,13 @@
   }
 
   .trendTitle {
-    padding: 1rem 2rem;
     font-weight: 500;
   }
+}
+
+.trendsDivWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
