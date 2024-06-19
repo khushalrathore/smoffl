@@ -18,7 +18,7 @@ function Hero() {
         <div className={styles.heroDivBg} style={{ background: `linear-gradient(${heroItem.first.Accent} 0%, rgba(255, 255, 255, 0.006) 90%)` }}></div>
         <div className={styles.heroDiv1} >
           <div className={styles.mini} style={{ background: `url(${heroItem.first.Img})no-repeat center center` }}></div>
-          <span className={styles.title}>{heroItem.first.Title}</span>
+          <span className={styles.title} style={{ background: `url(${heroItem.first.Img})` }}>{heroItem.first.Title}</span>
           <p className={styles.description}>{heroItem.first.Desc}</p>
           <a href={heroItem.first.Link}><button>Learn More</button></a>
         </div>

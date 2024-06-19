@@ -28,12 +28,10 @@
       color: rgba(255, 255, 255, 0.1);
       font-weight: 900;
       font-size: 4rem;
-
       font-weight: 700;
-      background-size: cover;
-      background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGR2YW5nb2doLXNlbGYtcG9ydHJhaXQtbTAxLWpvYjY2MV8yLWwxMDBvNmVmLmpwZw.jpg);
-      -webkit-background-clip: text;
-      background-clip: text;
+      background-size: cover !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
     }
 
     .description {

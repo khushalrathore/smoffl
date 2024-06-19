@@ -1,4 +1,10 @@
 @media only screen and (max-width:50em) {
+  .contactMeme {
+
+    margin-left: -2rem;
+
+  }
+
   .preFooterDivHeading {
     display: flex;
     justify-content: space-between;
@@ -19,13 +25,14 @@
     padding-bottom: 0 !important;
     padding-inline: 1rem !important;
     margin-bottom: -2rem !important;
-    padding-bottom: 1.5rem !important;
 
 
   }
 }
 
 .preFooterDiv {
+
+
   margin-top: 4.25rem;
   padding: 1rem;
   color: ghostwhite;
@@ -40,8 +47,10 @@
 
 
   .preFooterDivHeading {
+
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: start;
     max-width: 70ch;
 
     div {
@@ -64,6 +73,15 @@
         text-transform: lowercase;
 
       }
+    }
+
+    .contactMeme {
+      background: url(https://media1.tenor.com/m/D5w6qK5vBdYAAAAd/tom-and-jerry-tom.gif)no-repeat center center;
+      width: 300px;
+      height: 300px;
+      border-radius: 12px;
+      margin-block: 2rem;
+
     }
   }
 
