@@ -3,6 +3,8 @@ import RecentItem from './RecentItem.jsx'
 import { heroItem } from './Hero.jsx';
 import insta_post from '../../assets/insta_post.png'
 import insta_post2 from '../../assets/insta_post2.png'
+import Footer from '../../Components/Footer.jsx'
+
 function Recents() {
   const recentItem = {
     second: {

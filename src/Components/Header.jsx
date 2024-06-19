@@ -31,7 +31,7 @@ function Header() {
         <ul>
           <li><a href='/'>Home</a></li>
           <li><a href='/'>Portfolio</a></li>
-          <li><a href='/'>Courses</a></li>
+          <li><a href='/courses'>Courses</a></li>
           <li><a href='/'>Team</a></li>
           <li><a href='/contact-us'>Contact Us</a></li>
           <div>=</div>

@@ -1,0 +1,53 @@
+.coursesDiv {
+  background-color: black;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  position: relative;
+
+  .coursesDivHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    div {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      span {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 500;
+
+      }
+
+      button {
+        padding: 0.25rem;
+        font-size: 1.125rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 150ms;
+
+        &:nth-child(2) {
+          transform: scaleX(-1);
+          opacity: 0.8 !important;
+
+        }
+
+        &:active {
+          scale: 1.125;
+        }
+      }
+    }
+  }
+}

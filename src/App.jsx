@@ -6,6 +6,7 @@ import Stats from "./Components/Sections/Stats"
 import Blogs from "./Components/Sections/Blogs"
 import Recents from "./Components/Sections/Recents"
 import ContactUs from './Pages/ContactUs/ContactUs';
+import Courses from './Pages/ContactUs/Courses';
 
 function App() {
   const blogInfo = {
@@ -27,6 +28,7 @@ function App() {
             </>
           } />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/courses" element={<Courses />} />
           {/* Add other routes here if needed */}
         </Routes>
       </div>

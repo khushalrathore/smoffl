@@ -1,6 +1,45 @@
-import styles from './Footer.module.css'
+import React, { useEffect } from 'react';
+import styles from './Footer.module.css';
+
 function Footer() {
-  const date = new Date().getFullYear()
+  useEffect(() => {
+    function adjustFooter() {
+      const footer = document.querySelector('footer');
+      const bodyHeight = document.body.offsetHeight;
+      const windowHeight = window.innerHeight;
+      const footerHeight = footer.offsetHeight;
+
+      if (bodyHeight + footerHeight < windowHeight) {
+        footer.style.position = 'absolute';
+        footer.style.bottom = '0';
+        footer.style.width = '100%';
+      } else {
+        footer.style.position = 'static';
+      }
+    }
+
+    // Initial adjustment
+    adjustFooter();
+
+    // Adjust on window resize
+    window.addEventListener('resize', adjustFooter);
+
+    // Adjust when content loads
+    window.addEventListener('load', adjustFooter);
+
+    // Adjust when content changes (useful for SPAs or dynamic content)
+    const observer = new MutationObserver(adjustFooter);
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener('resize', adjustFooter);
+      window.removeEventListener('load', adjustFooter);
+      observer.disconnect();
+    };
+  }, []);
+
+  const date = new Date().getFullYear();
   return (
     <footer className={styles.footerMain}>
       <div className={styles.footerMainDiv1}><a href='/'>ShineMoon</a></div>
@@ -12,7 +51,7 @@ function Footer() {
             <li><a href='/'>Portfolio</a></li>
             <li><a href='/'>Courses</a></li>
             <li><a href='/'>Team</a></li>
-            <li><a href='/'>Contact Us</a></li>
+            <li><a href='/contact-us'>Contact Us</a></li>
           </ul>
           <ul>Resources
             <li><a href='/'>Blog</a></li>
@@ -37,6 +76,7 @@ function Footer() {
         </ul>
       </div>
     </footer>
-  )
+  );
 }
+
 export default Footer;
