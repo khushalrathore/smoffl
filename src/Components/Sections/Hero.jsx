@@ -24,14 +24,14 @@ function Hero() {
         </div>
         <div className={styles.heroDiv2} style={{ background: `url(${heroItem.first.Img})no-repeat center center` }}></div>
       </div >
-      {/* <div className={styles.section2}>
+      <div className={styles.section2}>
         <HeroTile Title={heroItem.first.Title} Link={heroItem.first.Link} Img={heroItem.first.Img} />
         <HeroTile />
         <HeroTile />
         <HeroTile />
         <HeroTile />
         <HeroTile />
-      </div> */}
+      </div>
     </>
   );
 }

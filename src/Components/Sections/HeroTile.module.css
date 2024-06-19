@@ -10,24 +10,25 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  background: rgb(243, 243, 243);
+  z-index: 1;
 
-  &::before {
-    content: '';
+  .tileBoxBg {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
+    z-index: 0;
     border-radius: 10px;
     transition: all 450ms;
-    background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGR2YW5nb2doLXNlbGYtcG9ydHJhaXQtbTAxLWpvYjY2MV8yLWwxMDBvNmVmLmpwZw.jpg) no-repeat center center;
-    background-size: cover;
+    background: rgb(243, 243, 243);
+    background-size: cover !important;
     z-index: 1;
+
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 
-  &:hover::before {
-    transform: scale(1.25);
-  }
+
 
   p {
     background: white;
