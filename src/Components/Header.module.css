@@ -1,11 +1,37 @@
 @media only screen and (max-width:50em) {
   .bigNav {
-    display: none;
+    display: block;
+
+    ul {
+      li {
+        display: none;
+
+      }
+
+      .mobileMenu {
+        background: rgba(0, 0, 0, 0.816);
+        backdrop-filter: blur(35px);
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
   }
 
   .headerMain {
     padding: 1rem !important;
 
+  }
+}
+
+@media only screen and (min-width:50em) {
+  .mobileMenu {
+    display: none;
   }
 }
 

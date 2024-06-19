@@ -34,7 +34,7 @@ function Header() {
           <li><a href='/courses'>Courses</a></li>
           <li><a href='/'>Team</a></li>
           <li><a href='/contact-us'>Contact Us</a></li>
-          <div>=</div>
+          <div className={styles.mobileMenu}>＝</div>
         </ul>
       </nav>
     </header>
