@@ -5,6 +5,7 @@
 
   .headerMain {
     padding: 1rem !important;
+
   }
 }
 
@@ -34,6 +35,13 @@
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
+    display: relative;
+    cursor: pointer;
+
+    .gotoHome {
+      position: absolute;
+      inset: 0;
+    }
 
     .logoDiv {
       background: url(src/assets/moon.png)no-repeat center center;

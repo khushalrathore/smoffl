@@ -1,17 +1,10 @@
-HOME
+Privacy Policy
 
-Portfolio
+Terms and Conditions
 
-COurse
+Cancellation and Refund
 
-Team
+Shipping and Delivery
 
-COntact Us
-
-
-
-
-
-
-  
+Contact Us
 

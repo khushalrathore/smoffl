@@ -1,8 +1,9 @@
 import styles from './HeroTile.module.css';
-function HeroTile() {
+import { heroItem } from './Hero.jsx';
+function HeroTile({ Title, Link, Img }) {
   return (
     <div className={styles.tileBox}>
-      <p>Premier Pro 101</p>
+      <p>{Title}</p>
     </div>
   );
 }

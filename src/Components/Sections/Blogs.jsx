@@ -8,7 +8,7 @@ function Blogs({ blogDate }) {
       name: 'Himanshu Kumawat',
       title: 'Learning the same sh*t twice',
       desc: 'Revisiting footage can be tedious but essential in video editing. Each review uncovers new details, ensuring refined cuts and enhanced storytelling, ultimately perfecting the final production.',
-      cover: 'https://i.redd.it/52nhgb5quao51.jpg',
+      cover: 'https://c.tadst.com/gfx/600x337/earthshine.jpg?1',
     },
   }
   const days = new Date().getDate() - blogDate;

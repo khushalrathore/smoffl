@@ -13,7 +13,7 @@ function MiniTrend({ id, TrendImage, Title, Stats, Link }) {
         <div className={styles.miniTrendText}>
           <p className={styles.miniTrendTitle}>{Title}</p>
           <p className={styles.miniTrendStats} >
-            {Stats} Views &nbsp; • <a href={Link} style={{ color: `grey` }}>Check now</a>
+            {Stats} Views&nbsp;&nbsp;•&nbsp;<a href={Link} style={{ color: `grey` }}>Check Now</a>
           </p>
         </div>
       </div>

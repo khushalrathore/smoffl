@@ -1,33 +1,35 @@
 import styles from './Recents.module.css'
 import RecentItem from './RecentItem.jsx'
+import { heroItem } from './Hero.jsx';
+import insta_post from '../../assets/insta_post.png'
+import insta_post2 from '../../assets/insta_post2.png'
 function Recents() {
   const recentItem = {
-    first: {
-      id: '1',
-      stats: '12000',
-      title: 'A Random Title of Something',
-      Link: 'https://www.youtube.com/@shinemoonk',
-      Img: 'https://i.pinimg.com/originals/5b/62/48/5b62482ee9032dbfeb447cf811bd644c.gif'
-    }, second: {
+    second: {
+      stats: '1.5K',
+      title: 'Hostel Essentials | College Shopping',
+      Link: 'https://youtu.be/Pn6KZoiUSYk?si=O9fode4XS-YJt7O7',
+      Img: 'https://i.ytimg.com/vi/Pn6KZoiUSYk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAXTDG2kXEDKxh7qHFrm6rnYUTdEQ'
+    }, third: {
       id: '2',
-      stats: '1200',
-      title: 'Another Title of Something Relevant',
-      Link: 'https://www.youtube.com/@shinemoonk',
-      Img: 'https://media0.giphy.com/media/GiXBNzilzkHH1GY7Vc/giphy.gif?cid=6c09b952minbwsaelel6mb2bscidysfkk42v3o4pis06ufei&ep=v1_gifs_search&rid=giphy.gif&ct=g'
+      stats: '437',
+      title: 'New Store Alert | RESTATE VINTAGE',
+      Link: 'https://www.instagram.com/reel/C764HeYBc4E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      Img: insta_post
     },
-    third: {
+    first: {
       id: '3',
-      stats: '120',
-      title: 'A Random Title of Something',
-      Link: 'https://www.youtube.com/@shinemoonk',
-      Img: 'https://i.pinimg.com/originals/8a/54/f2/8a54f29e53eb0e3826a822ffec23a602.gif'
+      stats: '12',
+      title: heroItem.first.Title,
+      Link: heroItem.first.Link,
+      Img: heroItem.first.Img
     },
     fourth: {
       id: '4',
-      stats: '12',
-      title: 'Another Title of Something Relevant',
-      Link: 'https://www.youtube.com/@shinemoonk',
-      Img: 'https://i.gifer.com/embedded/download/77Q8.gif'
+      stats: '92',
+      title: 'Do Not Touch The Glass !!!',
+      Link: 'https://www.instagram.com/reel/C5inJnhBuAZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      Img: insta_post2
     },
   }
   return (

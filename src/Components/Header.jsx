@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 import styles from './Header.module.css';
 
 function Header() {
+  function gotoHome() {
+    window.location.href = '/';
+  }
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector(`.${styles.headerMain}`);
@@ -20,7 +23,7 @@ function Header() {
 
   return (
     <header className={styles.headerMain}>
-      <div className={styles.logoDivWrapper}>
+      <div className={styles.logoDivWrapper} onClick={gotoHome}>
         <div className={styles.logoDiv}></div>
         <span>ShineMoon</span>
       </div>
@@ -30,7 +33,7 @@ function Header() {
           <li><a href='/'>Portfolio</a></li>
           <li><a href='/'>Courses</a></li>
           <li><a href='/'>Team</a></li>
-          <li><a href='/'>Contact Us</a></li>
+          <li><a href='/contact-us'>Contact Us</a></li>
           <div>=</div>
         </ul>
       </nav>

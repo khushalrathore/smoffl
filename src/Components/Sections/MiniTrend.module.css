@@ -33,7 +33,7 @@
     font-size: 1rem;
     flex: 1;
     border-radius: 10px;
-
+    min-height: 105px;
     padding: 1rem;
     display: flex;
     justify-content: start;
@@ -80,7 +80,7 @@
     }
 
     .miniTrendTitle {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
     }
   }
 }

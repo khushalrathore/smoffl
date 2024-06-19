@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './RecentItem.module.css';
 
-function RecentItem({ TrendImage, Title, Stats, Link }) {
+function RecentItem({ TrendImage, Title, Stats, Link, Color }) {
+  Color = ''
   return (
     <div className={styles.recentItemWrapper}>
-      <div className={styles.recentItem}>
+      <div className={styles.recentItem} style={{ boxShadow: `0 0 30px ${Color} opacity 0.5` }}>
         <div
           className={styles.recentItemImage}
           style={{ backgroundImage: `url(${TrendImage})` }}
