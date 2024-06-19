@@ -2,10 +2,10 @@ import styles from './Hero.module.css'
 import HeroTile from './HeroTile';
 export const heroItem = {
   first: {
-    Accent: 'cadetblue',
+    Accent: 'darkblue',
     Title: 'Premiere Pro 101',
     Desc: 'Unlock your creative potential with our comprehensive video editing courses. Learn advanced techniques and transform your ideas into stunning visuals.',
-    Img: 'https://media.licdn.com/dms/image/D4D03AQEoJjpyj87xzA/profile-displayphoto-shrink_800_800/0/1702487114779?e=2147483647&v=beta&t=NhREkCvIC8SU5SN4CNF6Z3Nr_KmkM-aNxddKWSUaTNw',
+    Img: 'https://img-c.udemycdn.com/course/750x422/3831056_e098_8.jpg',
     Link: '/',
   },
 
