@@ -1,22 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Hero from "./Components/Sections/Hero"
-import Trend from "./Components/Sections/Trend"
-import Stats from "./Components/Sections/Stats"
-import Blogs from "./Components/Sections/Blogs"
-import Recents from "./Components/Sections/Recents"
+import { Route, Routes } from 'react-router-dom';
+import Hero from "./Components/Sections/Hero";
+import Trend from "./Components/Sections/Trend";
+import Stats from "./Components/Sections/Stats";
+import Blogs from "./Components/Sections/Blogs";
+import Recents from "./Components/Sections/Recents";
 import ContactUs from './Pages/ContactUs/ContactUs';
-import Courses from './Pages/ContactUs/Courses';
+import Courses from './Pages/Courses/Courses';
+import Team from './Pages/Team/Team';
 
 function App() {
   const blogInfo = {
     first: {
-      date: 8
-    }
-  }
+      date: 8,
+    },
+  };
+
   return (
-    <Router>
-      <div>
+    <div className="App">
+      <main>
         <Routes>
           <Route path="/" element={
             <>
@@ -29,12 +31,11 @@ function App() {
           } />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/courses" element={<Courses />} />
-          {/* Add other routes here if needed */}
+          <Route path="/team" element={<Team />} />
         </Routes>
-      </div>
-    </Router>
-
+      </main>
+    </div>
   );
 }
 
-export default App
+export default App;

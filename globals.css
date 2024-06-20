@@ -1,0 +1,9 @@
+.pageDiv {
+  padding: 1rem 2rem;
+  padding-top: 4.35rem;
+
+  .pageTitle {
+    font-size: 2.5rem;
+    margin-block: 1rem;
+  }
+}

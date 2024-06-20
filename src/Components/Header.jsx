@@ -1,10 +1,15 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 
 function Header() {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   function gotoHome() {
     window.location.href = '/';
   }
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector(`.${styles.headerMain}`);
@@ -22,7 +27,7 @@ function Header() {
   }, []);
 
   return (
-    <header className={styles.headerMain}>
+    <header className={`${styles.headerMain} ${isHomePage ? '' : styles.withBorder}`}>
       <div className={styles.logoDivWrapper} onClick={gotoHome}>
         <div className={styles.logoDiv}></div>
         <span>ShineMoon</span>
@@ -32,7 +37,7 @@ function Header() {
           <li><a href='/'>Home</a></li>
           <li><a href='/'>Portfolio</a></li>
           <li><a href='/courses'>Courses</a></li>
-          <li><a href='/'>Team</a></li>
+          <li><a href='/team'>Team</a></li>
           <li><a href='/contact-us'>Contact Us</a></li>
           <div className={styles.mobileMenu}>＝</div>
         </ul>

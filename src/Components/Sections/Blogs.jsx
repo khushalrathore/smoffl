@@ -67,8 +67,8 @@ function Blogs({ blogDate }) {
           </div>
         </div>
         <div className={styles.hasButtons}>
-          <div><span className={styles.arrow1}></span></div>
-          <div><span className={styles.arrow2}></span></div>
+          <div className={styles.hasButtonDiv}><span className={styles.arrow1}></span></div>
+          <div className={styles.hasButtonDiv}><span className={styles.arrow2}></span></div>
         </div>
       </div>
     </div>

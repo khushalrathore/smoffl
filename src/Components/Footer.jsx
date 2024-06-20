@@ -2,42 +2,42 @@ import React, { useEffect } from 'react';
 import styles from './Footer.module.css';
 
 function Footer() {
-  useEffect(() => {
-    function adjustFooter() {
-      const footer = document.querySelector('footer');
-      const bodyHeight = document.body.offsetHeight;
-      const windowHeight = window.innerHeight;
-      const footerHeight = footer.offsetHeight;
+  // useEffect(() => {
+  //   function adjustFooter() {
+  //     const footer = document.querySelector('footer');
+  //     const bodyHeight = document.body.offsetHeight;
+  //     const windowHeight = window.innerHeight;
+  //     const footerHeight = footer.offsetHeight;
 
-      if (bodyHeight + footerHeight < windowHeight) {
-        footer.style.position = 'absolute';
-        footer.style.bottom = '0';
-        footer.style.width = '100%';
-      } else {
-        footer.style.position = 'static';
-      }
-    }
+  //     if (bodyHeight + footerHeight < windowHeight) {
+  //       footer.style.position = 'absolute';
+  //       footer.style.bottom = '0';
+  //       footer.style.width = '100%';
+  //     } else {
+  //       footer.style.position = 'static';
+  //     }
+  //   }
 
-    // Initial adjustment
-    adjustFooter();
+  //   // Initial adjustment
+  //   adjustFooter();
 
-    // Adjust on window resize
-    window.addEventListener('resize', adjustFooter);
+  //   // Adjust on window resize
+  //   window.addEventListener('resize', adjustFooter);
 
-    // Adjust when content loads
-    window.addEventListener('load', adjustFooter);
+  //   // Adjust when content loads
+  //   window.addEventListener('load', adjustFooter);
 
-    // Adjust when content changes (useful for SPAs or dynamic content)
-    const observer = new MutationObserver(adjustFooter);
-    observer.observe(document.body, { childList: true, subtree: true });
+  //   // Adjust when content changes (useful for SPAs or dynamic content)
+  //   const observer = new MutationObserver(adjustFooter);
+  //   observer.observe(document.body, { childList: true, subtree: true });
 
-    // Cleanup function
-    return () => {
-      window.removeEventListener('resize', adjustFooter);
-      window.removeEventListener('load', adjustFooter);
-      observer.disconnect();
-    };
-  }, []);
+  //   // Cleanup function
+  //   return () => {
+  //     window.removeEventListener('resize', adjustFooter);
+  //     window.removeEventListener('load', adjustFooter);
+  //     observer.disconnect();
+  //   };
+  // }, []);
 
   const date = new Date().getFullYear();
   return (
@@ -62,18 +62,18 @@ function Footer() {
             <li><a href='/'>Terms of Use</a></li>
             <li><a href='/'>Privacy Policy</a></li>
           </ul>
-          <ul>Support
+          {/* <ul>Support
             <li><a href='https://www.instagram.com/ig_shinemoon/'><span style={{ fontFamily: `system-ui`, marginInline: `3px`, fontSize: `18px` }}>@</span>ig_shinemoon</a></li>
             <li><a href='mailto: support@shinemoon.in'>support<span style={{ fontFamily: `system-ui`, marginInline: `3px`, fontSize: `18px` }}>@</span>shinemoon.in</a></li>
-          </ul>
+          </ul> */}
         </>
       </div>
       <div className={styles.footerMainDiv3}>
         <span><span style={{ fontFamily: `system-ui`, marginInline: `3px`, fontSize: `18px` }}>&copy;</span>{date} <a href='/'>shinemoon.in</a></span>
-        <ul>
+        {/* <ul>
           <li><a href='https://x.com/shinemoon221/'>Twitter</a></li>
           <li><a href='https://www.youtube.com/channel/UCSWjcz32WGRPjEteBcE0tvA'>Youtube</a></li>
-        </ul>
+        </ul> */}
       </div>
     </footer>
   );

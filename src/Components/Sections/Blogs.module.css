@@ -104,10 +104,10 @@
       display: flex;
       gap: 1rem;
 
-      div {
+      .hasButtonDiv {
         border: none;
         color: white;
-        background: grey;
+        background: whitesmoke !important;
         font-size: 1rem;
         border-radius: 50%;
         display: flex;

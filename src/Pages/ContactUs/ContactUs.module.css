@@ -1,6 +1,6 @@
 .contactUsDiv {
-  margin-top: 4rem;
   padding: 1rem 2rem;
+  margin-top: 4rem !important;
 
   .contactUsDivHeading {
     display: flex;

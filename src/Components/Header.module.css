@@ -11,6 +11,7 @@
       .mobileMenu {
         background: rgba(0, 0, 0, 0.816);
         backdrop-filter: blur(35px);
+        -webkit-backdrop-filter: blur(35px);
         color: white;
         border-radius: 50%;
         width: 20px;
@@ -37,8 +38,13 @@
 
 .headerMain.scrolled {
   background: rgba(255, 255, 255, 0.4574);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  border-bottom: 1px solid gainsboro;
+}
+
+.withBorder {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.102)
 }
 
 .headerMain {

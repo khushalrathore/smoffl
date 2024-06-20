@@ -13,7 +13,7 @@ function PreFooter() {
   }, []);
 
   return (
-    <div className={styles.preFooterDiv} style={{ position: `relative` }} >
+    <div className={styles.preFooterDiv}>
       <div className={styles.preFooterDivHeading}>
         <div>
           <span>Let us know what you would like to communicate and we will get back to you as soon as possible.</span>
