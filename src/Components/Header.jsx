@@ -35,7 +35,7 @@ function Header() {
       <nav className={styles.bigNav}>
         <ul>
           <li><a href='/'>Home</a></li>
-          <li><a href='/portfolio'>Portfolio</a></li>
+          {/* <li><a href='/portfolio'>Portfolio</a></li> */}
           <li><a href='/courses'>Courses</a></li>
           <li><a href='/team'>Team</a></li>
           <li><a href='/contact-us'>Contact Us</a></li>
