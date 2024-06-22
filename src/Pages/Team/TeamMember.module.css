@@ -33,6 +33,7 @@
         border-radius: 20px 20px 10px 10px;
         background: transparent;
         backdrop-filter: blur(35px);
+        -webkit-backdrop-filter: blur(35px) !important;
         z-index: -1;
       }
 
@@ -55,12 +56,13 @@
         color: white;
         font-weight: 600;
         align-items: center;
-
+        position: relative;
       }
 
       .teamMemberRole {
         background: radial-gradient(rgba(255, 255, 255, 0.205), rgba(245, 245, 245, 0.205));
         backdrop-filter: blur(35px);
+        -webkit-backdrop-filter: blur(35px);
         color: white;
         font-weight: bold;
         border: 1px dotted gainsboro;
@@ -116,5 +118,51 @@
     height: 5px;
     border-radius: 100dvw;
     background-size: cover !important;
+  }
+}
+
+@media only screen and (max-width:50em) {
+  /* .teamMembersDiv {
+
+  } */
+
+  .teamMemberInfo {
+    flex-direction: column !important;
+    min-width: 100% !important;
+    align-items: start !important;
+
+  }
+
+  .teamMemberDesc {
+    max-width: 25ch !important;
+    font-size: 1rem !important;
+    font-weight: 500;
+    padding: 0.125rem 1rem;
+    margin-top: 1rem !important;
+
+  }
+
+
+
+  .circleNum {
+    display: none !important;
+  }
+
+  .separator {
+    display: none !important;
+  }
+
+  .teamMemberPersonalWrapper {
+    min-width: 100% !important;
+
+    .tMPWbg {
+      position: absolute;
+      min-width: 100% !important;
+    }
+
+    .teamMemberImg {
+      min-width: 100% !important;
+
+    }
   }
 }

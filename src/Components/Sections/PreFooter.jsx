@@ -11,19 +11,27 @@ function PreFooter() {
       document.body.removeChild(script);
     };
   }, []);
-
   return (
-    <div className={styles.preFooterDiv}>
-      <div className={styles.preFooterDivHeading}>
-        <div>
-          <span>Let us know what you would like to communicate and we will get back to you as soon as possible.</span>
-          <p></p>
-          <div className={styles.contactMeme}></div>
-        </div>
-      </div>
-      <div data-tf-live="01J0K5P2BXF1MHBM76935ZKJRE" ></div>
+    <>
+      <div className={styles.preFooterDiv}>
+        <div className={styles.preFooterDivHeading} >
+          <div >
+            <span>Let us know what you would like to communicate and we will get back to you as soon as possible.</span>
+            <div className={styles.contactMeme} style={{ marginLeft: `0.125rem` }}></div>
+          </div>
 
-    </div >
+        </div>
+        <div data-tf-live="01J0K5P2BXF1MHBM76935ZKJRE" ></div>
+
+      </div >
+      <div className={styles.socials} >
+        <a className={styles.icon1} href='https://www.facebook.com/shine.moon.37625843/' target='_blank'></a><a href='https://www.facebook.com/shine.moon.37625843/' target='_blank'>Facebook</a>
+        <a className={styles.icon2} href='https://x.com/shinemoon221/' target='_blank'></a><a href='https://x.com/shinemoon221/' target='_blank'>X / Twitter</a>
+        <a className={styles.icon3} href='https://www.instagram.com/ig_shinemoon/' target='_blank'></a><a href='https://www.instagram.com/ig_shinemoon/' target='_blank'>Instagram</a>
+        <a className={styles.icon4} href='https://www.youtube.com/channel/UCSWjcz32WGRPjEteBcE0tvA' target='_blank'></a><a href='https://www.youtube.com/channel/UCSWjcz32WGRPjEteBcE0tvA' target='_blank'>YouTube</a>
+      </div>
+    </>
+
   );
 }
 

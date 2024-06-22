@@ -48,15 +48,15 @@ function Footer() {
         <>
           <ul>Sitemap
             <li><a href='/'>Home</a></li>
-            <li><a href='/'>Portfolio</a></li>
-            <li><a href='/'>Courses</a></li>
-            <li><a href='/'>Team</a></li>
+            {/* <li><a href='/'>Portfolio</a></li> */}
+            <li><a href='/courses'>Courses</a></li>
+            <li><a href='/team'>Team</a></li>
             <li><a href='/contact-us'>Contact Us</a></li>
           </ul>
           <ul>Resources
             <li><a href='/'>Blog</a></li>
             <li><a href='/'>Newsletter</a></li>
-            <li><a href='/'>Courses</a></li>
+            <li><a href='/courses'>Courses</a></li>
           </ul>
           <ul>Legal
             <li><a href='/'>Terms of Use</a></li>

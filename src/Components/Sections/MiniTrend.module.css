@@ -41,10 +41,16 @@
     gap: 1rem;
     cursor: pointer;
     transition: all 150ms;
+    position: relative;
 
     &:hover {
       background-color: rgb(228, 228, 228);
 
+    }
+
+    .blockOver {
+      position: absolute;
+      inset: 0;
     }
 
     .miniTrendText {

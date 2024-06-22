@@ -1,5 +1,11 @@
+.teamMembersWrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+@media only screen and (max-width:50em) {
   .teamMembersWrapper {
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
+    align-items: center !important;
   }
+}

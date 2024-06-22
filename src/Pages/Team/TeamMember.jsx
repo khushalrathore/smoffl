@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './TeamMember.module.css'
 
-
-function TeamMember({ name, role, img, desc, id, direction }) {
-  const roleStyle = name === 'Himanshu Kumawat' ? { display: `none` } : {};
+function TeamMember({ name, role, img, desc, id, direction, link }) {
+  const roleStyle = name === 'ShineMoon' ? { display: `none` } : {};
 
   return (
     <div className={styles.teamMembersDiv} style={{ flexDirection: direction }}>
@@ -11,7 +10,7 @@ function TeamMember({ name, role, img, desc, id, direction }) {
         <div className={styles.teamMemberPersonalWrapper} style={{ background: `url(${img})no-repeat center center` }}>
           <div className={styles.tMPWbg}></div>
           <div className={styles.teamMemberImg} style={{ background: `url(${img})no-repeat center center` }}></div>
-          <span className={styles.teamMemberName}>{name}</span>
+          <a href={link} target='_blank'><span className={styles.teamMemberName}>{name}</span></a>
           <span className={styles.teamMemberRole} style={roleStyle}>{role}</span>
         </div>
         <div>

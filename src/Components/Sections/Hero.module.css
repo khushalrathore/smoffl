@@ -1,13 +1,13 @@
 .heroDiv {
   margin-top: 0 !important;
   padding: 1rem 2rem;
-  padding-block: 6rem;
   display: flex;
   flex-wrap: wrap-reverse !important;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 0;
+  background: gainsboro;
 
 
   .heroDivBg {
@@ -67,7 +67,7 @@
   }
 
   .heroDiv2 {
-    background-size: cover !important;
+    background-size: contain !important;
     height: 425px;
     border-radius: 25px;
     flex: 0.7;
@@ -90,6 +90,8 @@
 
   .heroDiv {
     margin: 0 !important;
+    margin-bottom: 1rem !important;
+
 
   }
 
@@ -117,6 +119,8 @@
 
   .heroDiv {
     margin-block: 0rem !important;
+    margin-bottom: 1rem !important;
+
   }
 }
 
@@ -139,5 +143,22 @@
   .heroDiv {
     margin: 0rem !important;
     padding-bottom: 2rem !important;
+    margin-bottom: 1rem !important;
+
+  }
+}
+
+@media only screen and (min-width:50em) {
+  .heroDiv2 {
+
+    height: 800px !important;
+    background-size: contain !important;
+    /* filter: drop-shadow(0 3rem 3rem rgba(0, 0, 0, 0.45)); */
+
+  }
+
+  .heroDiv {
+    padding: 1rem 10rem 5.25rem 10rem !important;
+
   }
 }

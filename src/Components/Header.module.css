@@ -103,12 +103,15 @@
         border-radius: 100px;
         background: none;
         transition: all 150ms;
+        border: 1px solid transparent;
+
 
         &:hover {
-          background-color: rgba(245, 245, 245, 0.447);
+          background-color: transparent;
+          border: 1px solid rgba(0, 0, 0, 0.5);
         }
 
-        &:nth-child(5) {
+        &:nth-last-of-type(1) {
           background-color: black;
           color: white;
           transition: all 150ms;

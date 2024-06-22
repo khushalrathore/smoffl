@@ -1,0 +1,47 @@
+.courseItemLi {
+  background: rgb(243, 243, 243);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin-block: 0.25rem;
+  border-radius: 15px 0 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.102);
+  gap: 0.75rem;
+
+  .liHeading {
+    font-weight: bold;
+  }
+
+  .liIcon {
+    background-size: cover !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+
+  }
+
+  .liStat {
+    background: gainsboro;
+    font-size: 0.65rem;
+    font-weight: bold;
+    display: inline;
+    padding: 0.125rem 0.25rem;
+    border-radius: 10dvw;
+    color: gray
+  }
+
+  transition: all 150ms;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.02;
+  }
+
+  &:active {
+    filter: brightness(0.9);
+    scale: 1;
+
+  }
+}

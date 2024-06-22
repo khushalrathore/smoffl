@@ -1,5 +1,5 @@
 import styles from './HeroTile.module.css';
-import { heroItem } from './Hero.jsx';
+import { heroItem } from '../../Pages/0/PagesData.jsx';
 function HeroTile({ Title, Link, Img }) {
   return (
     <div className={styles.tileBox}>

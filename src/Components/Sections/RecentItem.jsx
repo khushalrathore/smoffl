@@ -13,9 +13,10 @@ function RecentItem({ TrendImage, Title, Stats, Link, Color }) {
         <div className={styles.recentItemText}>
           <p className={styles.recentItemTitle}>{Title}</p>
           <p className={styles.recentItemStats} >
-            {Stats} Views &nbsp; • <a href={Link} style={{ color: `grey` }}>Check now</a>
+            {Stats} Views &nbsp; • <a href={Link} target='_blank' style={{ color: `grey` }}>Check now</a>
           </p>
         </div>
+        <a href={Link} target='_blank' className={styles.blockOver}></a>
       </div>
     </div>
   );
