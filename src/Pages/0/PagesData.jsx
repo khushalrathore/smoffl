@@ -1,9 +1,9 @@
 import lead from '../../assets/lead.png';
 import manager from '../../assets/manager.png';
 import editor from '../../assets/editor.png';
-import icon1 from '../../assets/product-box-mockup2.png';
+import icon1 from '../../assets/course1.png';
 import icon2 from '../../assets/lead.png';
-import img_course13d from '../../assets/product-box-mockup2.png'
+import course_1 from '../../assets/course1.png'
 import insta_post from '../../assets/insta_post.png'
 import insta_post2 from '../../assets/insta_post2.png'
 
@@ -74,8 +74,20 @@ export const heroItem = [
     Title: 'Simplest Way To Learn',
     Desc: `Ye course pakka se video editor bana dega jada socho mat lelo or kuch sikh lo, kuki syd ye paise vase bhi cigrattee me udaa doge isse acha kuch use lelo.
 Padhayi to kr li jitni krni thi apni skill pe focus kr ke aage baddo or professional ban jaooooooooo`,
-    Img: img_course13d,
+    Img: course_1,
     Link: '/courses',
+    BtnText: 'Check Now',
+  },
+  {
+    id: 2,
+    Accent: 'rgba(0,0,0,0.5)',
+    Title: 'Team Members',
+    Desc: `Ye course pakka se video editor bana dega jada socho mat lelo or kuch sikh lo, kuki syd ye paise vase bhi cigrattee me udaa doge isse acha kuch use lelo.
+Padhayi to kr li jitni krni thi apni skill pe focus kr ke aage baddo or professional ban jaooooooooo`,
+    Img: 'https://media.vanityfair.com/photos/658343bb62b254900fb16533/1:1/w_2160,h_2160,c_limit/TheZoneOfInterest_UHD_SDR_FTR_Sub_2398_3840x2160_OAR_178_Rec709_20231101.01_06_30_08.Still003.jpg',
+    Link: '/team',
+    BtnText: 'Learn More',
+
   },
 ];
 

@@ -12,6 +12,13 @@
   overflow: hidden;
   background: rgb(243, 243, 243);
   z-index: 1;
+  position: relative;
+
+  .blockOver {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
 
   .tileBoxBg {
     position: absolute;

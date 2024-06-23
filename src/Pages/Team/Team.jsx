@@ -6,7 +6,9 @@ import { teamInfo } from '../0/PagesData';
 function Team() {
   return (
     <div className="pageDiv">
-      <div className="pageTitle">Team Members</div>
+      <div className="pageTitle">
+        <span>Team Members</span>
+      </div>
       <div className={styles.teamMembersWrapper}>
         {teamInfo.map(
           (member, i) =>
