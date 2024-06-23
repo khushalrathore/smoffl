@@ -70,7 +70,7 @@ export const coursesInfo = [
 export const heroItem = [
   {
     id: 1,
-    Accent: 'cadetblue',
+    Accent: 'steelblue',
     Title: 'Simplest Way To Learn',
     Desc: `Ye course pakka se video editor bana dega jada socho mat lelo or kuch sikh lo, kuki syd ye paise vase bhi cigrattee me udaa doge isse acha kuch use lelo.
 Padhayi to kr li jitni krni thi apni skill pe focus kr ke aage baddo or professional ban jaooooooooo`,
@@ -88,6 +88,7 @@ Padhayi to kr li jitni krni thi apni skill pe focus kr ke aage baddo or professi
     BtnText: 'Learn More',
 
   },
+
 ];
 
 export const recentItem = [
