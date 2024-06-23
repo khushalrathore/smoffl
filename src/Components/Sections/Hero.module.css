@@ -181,12 +181,14 @@ button:hover {
 
 .section2 {
   padding: 1rem 2rem;
-  display: flex;
+  display: none;
   flex-wrap: wrap-reverse !important;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   margin-block: 1rem !important;
+  margin-inline: 1rem;
+  margin-top: 3em !important;
 }
 
 @media only screen and (min-width: 50em) {
@@ -202,5 +204,9 @@ button:hover {
     justify-content: center !important;
     align-items: center !important;
     padding: 3.125rem 10rem 0rem 10rem !important;
+  }
+
+  .section2 {
+    display: flex !important;
   }
 }

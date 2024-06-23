@@ -80,11 +80,10 @@ Padhayi to kr li jitni krni thi apni skill pe focus kr ke aage baddo or professi
   },
   {
     id: 2,
-    Accent: 'rgba(0,0,0,0.5)',
+    Accent: 'gainsboro',
     Title: 'Team Members',
-    Desc: `Ye course pakka se video editor bana dega jada socho mat lelo or kuch sikh lo, kuki syd ye paise vase bhi cigrattee me udaa doge isse acha kuch use lelo.
-Padhayi to kr li jitni krni thi apni skill pe focus kr ke aage baddo or professional ban jaooooooooo`,
-    Img: 'https://media.vanityfair.com/photos/658343bb62b254900fb16533/1:1/w_2160,h_2160,c_limit/TheZoneOfInterest_UHD_SDR_FTR_Sub_2398_3840x2160_OAR_178_Rec709_20231101.01_06_30_08.Still003.jpg',
+    Desc: `Lorem Ipsum dLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    Img: 'https://i.kinja-img.com/image/upload/c_fill,h_900,q_60,w_1600/a686ee55066cdd8a2cf7c5acc4c9bf5f.jpg',
     Link: '/team',
     BtnText: 'Learn More',
 
