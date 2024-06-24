@@ -32,7 +32,7 @@ function TermsAndConditions() {
                     <span style={{ fontSize: 19 }} />
                   </bdt>
                   <span style={{ fontSize: 19 }}>
-                    <strong>TERMS OF USE</strong>
+                    <strong>TERMS AND CONDITIONS</strong>
                     <bdt className="else-block" />
                   </span>
                 </div>
@@ -46,7 +46,7 @@ function TermsAndConditions() {
                 >
                   <strong>Last updated</strong>{" "}
                   <bdt className="question">
-                    <strong>__________</strong>
+                    <strong>June 24, 2024</strong>
                   </bdt>
                 </div>
                 <div className="MsoNormal" style={{ lineHeight: "1.1" }}>
@@ -94,13 +94,12 @@ function TermsAndConditions() {
                       msoThemetint: 166
                     }}
                   >
-                    We are{" "}
+                    We are {"ShineMoon Pvt. Ltd."}
                     <bdt
                       className="block-container question question-in-editor"
                       data-id="9d459c4e-c548-e5cb-7729-a118548965d2"
                       data-type="question"
                     >
-                      __________
                     </bdt>
                     <bdt className="block-component" /> (
                     <bdt className="block-component" />"<strong>Company</strong>," "
@@ -196,16 +195,15 @@ function TermsAndConditions() {
                   >
                     You can contact us by{" "}
                     <bdt className="block-component">
-                      email at <bdt className="question">__________</bdt>
-                      <bdt className="block-component" /> or by mail to{" "}
-                      <bdt className="question">__________</bdt>
+                      email at <bdt className="question">support@shinemoon.in</bdt>
+                      <bdt className="block-component" />
                       <bdt className="block-component" />,{" "}
-                      <bdt className="question">__________</bdt>
+                      <bdt className="question"></bdt>
                       <bdt className="block-component" />
                       <bdt className="block-component" />
                       <bdt className="block-component">
                         <bdt className="block-component">,&nbsp;</bdt>
-                        <bdt className="question">__________</bdt>
+                        <bdt className="question"></bdt>
                         <bdt className="statement-end-if-in-editor" />
                       </bdt>
                       .
@@ -234,7 +232,7 @@ function TermsAndConditions() {
                     between you, whether personally or on behalf of an entity (
                     <bdt className="block-component" />"<strong>you</strong>"
                     <bdt className="statement-end-if-in-editor" />
-                    ), and <bdt className="question">__________</bdt>, concerning your
+                    ), and <bdt className="question"></bdt>, concerning your
                     access to and use of the Services. You agree that by accessing the
                     Services, you have read, understood, and agreed to be bound by all
                     of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL
@@ -980,7 +978,7 @@ function TermsAndConditions() {
                     If you wish to make any use of the Services, Content, or Marks
                     other than as set out in this section or elsewhere in our Legal
                     Terms, please address your request to:{" "}
-                    <bdt className="question">__________</bdt>. If we ever grant you
+                    <bdt className="question"></bdt>. If we ever grant you
                     the permission to post, reproduce, or publicly display any part of
                     our Services or Content, you must identify us as the owners or
                     licensors of the Services, Content, or Marks and ensure that any
@@ -4009,7 +4007,7 @@ function TermsAndConditions() {
                       >
                         These Legal Terms shall be governed by and defined following
                         the laws of <bdt className="block-component" />
-                        <bdt className="question">__________</bdt>
+                        <bdt className="question"></bdt>
                         <span
                           style={{
                             fontSize: "11pt",
@@ -4019,7 +4017,7 @@ function TermsAndConditions() {
                         >
                           <bdt className="statement-end-if-in-editor" />
                         </span>
-                        . <bdt className="question">__________</bdt> and yourself
+                        . <bdt className="question"></bdt> and yourself
                         irrevocably consent that the courts of{" "}
                         <span
                           style={{
@@ -4029,7 +4027,7 @@ function TermsAndConditions() {
                           }}
                         >
                           <bdt className="block-component" />
-                          <bdt className="question">__________</bdt>
+                          <bdt className="question"></bdt>
                           <span
                             style={{
                               fontSize: "11pt",
@@ -4137,7 +4135,7 @@ function TermsAndConditions() {
                         <bdt className="statement-end-if-in-editor" />
                         ), the Parties agree to first attempt to negotiate any Dispute
                         (except those Disputes expressly provided below) informally
-                        for at least <bdt className="question">__________</bdt> days
+                        for at least <bdt className="question"></bdt> days
                         before initiating arbitration. Such informal negotiations
                         commence upon written notice from one Party to the other
                         Party.
@@ -4190,22 +4188,22 @@ function TermsAndConditions() {
                       according to the Rules of this ICAC, which, as a result of
                       referring to it, is considered as the part of this clause. The
                       number of arbitrators shall be{" "}
-                      <bdt className="question">__________</bdt>. The seat, or legal
+                      <bdt className="question"></bdt>. The seat, or legal
                       place, or arbitration shall be{" "}
                       <bdt className="block-component" />
                       <bdt className="block-component" />
                       <bdt className="block-component" />
-                      <bdt className="question">__________</bdt>
+                      <bdt className="question"></bdt>
                       <bdt className="statement-end-if-in-editor">
                         <bdt className="statement-end-if-in-editor" />
                         <bdt className="statement-end-if-in-editor" />
                       </bdt>
                       . The language of the proceedings shall be{" "}
-                      <bdt className="question">__________</bdt>. The governing law of
+                      <bdt className="question"></bdt>. The governing law of
                       these Legal Terms shall be substantive law of{" "}
                       <bdt className="block-component" />
                       <bdt className="block-component" />
-                      <bdt className="question">__________</bdt>
+                      <bdt className="question"></bdt>
                       <bdt className="statement-end-if-in-editor">
                         <bdt className="statement-end-if-in-editor" />
                       </bdt>
@@ -5123,7 +5121,7 @@ function TermsAndConditions() {
                       <span style={{ fontSize: 15 }}>
                         <span style={{ color: "rgb(89, 89, 89)" }}>
                           <bdt className="question">
-                            <strong>__________</strong>
+                            <strong></strong>
                           </bdt>
                           <strong>
                             <bdt className="block-component" />

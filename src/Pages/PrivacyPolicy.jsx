@@ -57,7 +57,7 @@ function PrivacyPolicy() {
           <span style={{ color: "rgb(127, 127, 127)" }}>
             <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
               <span data-custom-class="body_text">
-                This privacy notice for
+                This privacy notice for&nbsp;
                 <bdt className="question">
                   ShineMoon Pvt. Ltd.
                   <bdt className="block-component" />
