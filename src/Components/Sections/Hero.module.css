@@ -194,7 +194,7 @@ button:hover {
 @media only screen and (min-width: 50em) {
   .heroDiv2 {
     height: 700px !important;
-    background-size: cover !important;
+    background-size: contain !important;
     background-position: center center !important;
     margin-block: 3rem !important;
   }
