@@ -61,6 +61,8 @@ function Footer() {
           <ul>Legal
             <li><a href='/terms-and-conditions'>Terms and Conditions</a></li>
             <li><a href='/privacy-policy'>Privacy Policy</a></li>
+            <li><a href='/shipping-and-delivery'>Shipping and Delivery</a></li>
+            <li><a href='/cancellation-and-refunds'>Cancellation and Refunds</a></li>
           </ul>
           {/* <ul>Support
             <li><a href='https://www.instagram.com/ig_shinemoon/'><span style={{ fontFamily: `system-ui`, marginInline: `3px`, fontSize: `18px` }}>@</span>ig_shinemoon</a></li>

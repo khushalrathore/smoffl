@@ -10,6 +10,8 @@ import Courses from './Pages/Courses/Courses';
 import Team from './Pages/Team/Team';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsAndConditions from './Pages/TermsAndConditions';
+import ShippingAndDelivery from './Pages/ShippingAndDelivery';
+import CancellationAndRefundPolicy from './Pages/CancellationAndRefundPolicy';
 
 function App() {
   const blogInfo = {
@@ -36,6 +38,9 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/shipping-and-delivery" element={<ShippingAndDelivery />} />
+          <Route path="/cancellation-and-refunds" element={<CancellationAndRefundPolicy />} />
+
         </Routes>
       </main>
     </div>
