@@ -59,8 +59,8 @@ function Footer() {
             <li><a href='/courses'>Courses</a></li>
           </ul>
           <ul>Legal
-            <li><a href='/'>Terms of Use</a></li>
-            <li><a href='/'>Privacy Policy</a></li>
+            <li><a href='/terms-and-conditions'>Terms and Conditions</a></li>
+            <li><a href='/privacy-policy'>Privacy Policy</a></li>
           </ul>
           {/* <ul>Support
             <li><a href='https://www.instagram.com/ig_shinemoon/'><span style={{ fontFamily: `system-ui`, marginInline: `3px`, fontSize: `18px` }}>@</span>ig_shinemoon</a></li>

@@ -8,6 +8,8 @@ import Recents from "./Components/Sections/Recents";
 import ContactUs from './Pages/ContactUs/ContactUs';
 import Courses from './Pages/Courses/Courses';
 import Team from './Pages/Team/Team';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsAndConditions from './Pages/TermsAndConditions';
 
 function App() {
   const blogInfo = {
@@ -32,6 +34,8 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         </Routes>
       </main>
     </div>
