@@ -30,6 +30,10 @@ function PreFooter() {
         <a className={styles.icon3} href='https://www.instagram.com/ig_shinemoon/' target='_blank'></a><a href='https://www.instagram.com/ig_shinemoon/' target='_blank'>Instagram</a>
         <a className={styles.icon4} href='https://www.youtube.com/channel/UCSWjcz32WGRPjEteBcE0tvA' target='_blank'></a><a href='https://www.youtube.com/channel/UCSWjcz32WGRPjEteBcE0tvA' target='_blank'>YouTube</a>
       </div>
+      <div style={{ padding: `1rem 2rem`, display: 'flex', flexDirection: `column`, gap: `1rem`, background: `black`, color: `white`, fontWeight: `700` }}>
+        <a href='https://maps.app.goo.gl/4ozknkXirL8ehAPR7' style={{ display: `flex`, justifyContent: 'space-between', alignItems: `center` }}>🗺️Address : JECRC University, Jaipur</a>
+        <a href='mailto:support@shinemoon.in' style={{ display: `flex`, justifyContent: 'space-between', alignItems: `center`, textAlign: `center` }}>📧-Mail : support@shinemoon.in</a>
+      </div>
     </>
 
   );
