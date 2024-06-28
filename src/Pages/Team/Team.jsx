@@ -7,7 +7,7 @@ function Team() {
   return (
     <div className="pageDiv">
       <div className="pageTitle">
-        <span>Team Members</span>
+        <span className='pageHeading'>Team Members</span>
       </div>
       <div className={styles.teamMembersWrapper}>
         {teamInfo.map(
