@@ -1,12 +1,11 @@
 .coursesDiv {
-  margin-top: 4rem;
   padding: 1rem 2rem;
   position: relative;
   min-height: 100dvh;
 
   .coursesDivHeading {
     border-radius: 200px;
-    margin-block: 1rem;
+    padding-block: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,12 +71,15 @@
 
   .coursesDivContent {
     display: flex;
+    flex-direction: row;
 
     .coursesList {
-      flex: 0.4;
       background: white;
       border-radius: 15px 0 0 15px;
       padding-inline: 0.25rem;
+      gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
 
     }
 

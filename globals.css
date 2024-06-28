@@ -10,6 +10,7 @@
   .pageTitle {
     margin-bottom: 1rem;
     padding: 2rem;
+    padding-bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
