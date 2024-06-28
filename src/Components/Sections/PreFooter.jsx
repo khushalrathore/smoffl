@@ -31,7 +31,7 @@ function PreFooter() {
         <a className={styles.icon4} href='https://www.youtube.com/channel/UCSWjcz32WGRPjEteBcE0tvA' target='_blank'></a><a href='https://www.youtube.com/channel/UCSWjcz32WGRPjEteBcE0tvA' target='_blank'>YouTube</a>
       </div>
       <div style={{ padding: `1rem 2rem`, display: 'flex', flexDirection: `column`, gap: `1rem`, background: `black`, color: `white`, fontWeight: `700` }}>
-        <a href='https://maps.app.goo.gl/4ozknkXirL8ehAPR7' style={{ display: `flex`, justifyContent: 'space-between', alignItems: `center` }}>🗺️Address : JECRC University, Jaipur</a>
+        <a href='https://maps.app.goo.gl/4ozknkXirL8ehAPR7' style={{ display: `flex`, justifyContent: 'space-between', alignItems: `center`, maxWidth: `50ch` }}>🗺️Address : Plot No. IS-2036 to IS-2039 Ramchandrapura Industrial Area Jaipur, Sitapura, Vidhani, Rajasthan 303905</a>
         <a href='mailto:support@shinemoon.in' style={{ display: `flex`, justifyContent: 'space-between', alignItems: `center`, textAlign: `center` }}>📧-Mail : support@shinemoon.in</a>
       </div>
     </>

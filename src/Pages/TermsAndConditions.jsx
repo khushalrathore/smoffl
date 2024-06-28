@@ -94,7 +94,6 @@ function TermsAndConditions() {
                       msoThemetint: 166
                     }}
                   >
-                    We are {"ShineMoon Pvt. Ltd."}
                     <bdt
                       className="block-container question question-in-editor"
                       data-id="9d459c4e-c548-e5cb-7729-a118548965d2"

@@ -77,18 +77,7 @@ Padhayi to kr li jitni krni thi apni skill pe focus kr ke aage baddo or professi
     Img: course_1,
     Link: '/courses',
     BtnText: 'Check Now',
-  },
-  {
-    id: 2,
-    Accent: 'gainsboro',
-    Title: 'Team Members',
-    Desc: `Lorem Ipsum dLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
-    Img: 'https://i.kinja-img.com/image/upload/c_fill,h_900,q_60,w_1600/a686ee55066cdd8a2cf7c5acc4c9bf5f.jpg',
-    Link: '/team',
-    BtnText: 'Learn More',
-
-  },
-
+  }
 ];
 
 export const recentItem = [

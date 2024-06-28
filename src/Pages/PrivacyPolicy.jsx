@@ -59,7 +59,6 @@ function PrivacyPolicy() {
               <span data-custom-class="body_text">
                 This privacy notice for&nbsp;
                 <bdt className="question">
-                  ShineMoon Pvt. Ltd.
                   <bdt className="block-component" />
                 </bdt>{" "}
                 (<bdt className="block-component" />'<strong>we</strong>', '
@@ -4369,8 +4368,6 @@ function PrivacyPolicy() {
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <bdt className="question">
-                                                                        ShineMoon
-                                                                        Pvt. Ltd.
                                                                       </bdt>
                                                                     </span>
                                                                   </span>

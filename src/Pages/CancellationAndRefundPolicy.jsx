@@ -13,7 +13,7 @@ const CancellationAndRefundPolicy = () => {
       <p>Please note that all sales are final, and we do not offer refunds for our online courses. We encourage you to carefully review course details and ensure they meet your requirements before enrolling.</p>
 
       <h3>Contact Us</h3>
-      <p>If you have any questions regarding our cancellation policy or need assistance, please contact us at <a href="mailto:support@shinemoon.in" className={styles.link}>support@shinemoon.in</a>. We are here to assist you and ensure you have a positive learning experience with ShineMoon Pvt. Ltd.</p>
+      <p>If you have any questions regarding our cancellation policy or need assistance, please contact us at <a href="mailto:support@shinemoon.in" className={styles.link}>support@shinemoon.in</a>. We are here to assist you and ensure you have a positive learning experience</p>
     </div>
   );
 };
